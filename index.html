@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OSIS SMA PGRI</title>
+    <link rel="shortcut icon" type="osis-icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="/src/style.css">
+    <link rel="Stylesheet" href="/src/sweetalert2.min.css">
+</head>
+<body>
+    <section class="header">
+        <header class="navbar">
+            <a href="./"><img src="/images/logo.png" class="logo"></a>
+
+            <nav class="nav-link">
+                <ul>
+                    <li><a href="./" class="hideOnMobile">Home</a></li>
+                    <li onclick=showAlert()><a href="#" class="hideOnMobile">Member</a></li>
+                    <li onclick=showAlert()><a href="#" class="hideOnMobile">About</a></li>
+                    <li onclick=showAlert()><a href="#" class="hideOnMobile">Contact Us</a></li>
+                    <li onclick=showSidebar()><a href="#" class="open"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#" class="close"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M360-120v-720h80v720h-80Zm160-160v-400l200 200-200 200Z"/></svg></a></li>
+                <li ><a href="./">Home</a></li>
+                <li onclick=showAlertAndClose()><a href="#">Member</a></li>
+                <li onclick=showAlertAndClose()><a href="#">About</a></li>
+                <li onclick=showAlertAndClose()><a href="#">Contact Us</a></li>
+            </ul>
+            </header>
+
+            
+        
+    </section>
+
+   <section class="coming">
+    <div>
+        <h1>UNDER MAINTENANCE</h1>
+        <p>Still in the development stage by JoNs</p>
+    </div>
+   </section>
+   
+   <script>
+    
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.right = '0'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.right = '-300px'
+        }
+    </script>
+    <script src="src/sweetalert2.all.min.js"></script>
+
+    <script>
+
+        function showAlert(){
+            Swal.fire({
+            title: "Coming Soon.",
+            width: 600,
+            padding: "3em",
+            color: "#716add",
+            background: "#fff url(/images/trees.png)",
+            backdrop: `
+                rgba(0,0,123,0.4)
+                url("/images/nyan-cat.gif")
+                left top
+                no-repeat
+            `
+            });
+        }
+        function showAlertAndClose(){
+            Swal.fire({
+            title: "Coming Soon.",
+            width: 600,
+            padding: "3em",
+            color: "#716add",
+            background: "#fff url(/images/trees.png)",
+            backdrop: `
+                rgba(0,0,123,0.4)
+                url("/images/nyan-cat.gif")
+                left top
+                no-repeat
+            `
+            });
+            hideSidebar();
+        }
+    </script>
+
+    
+    <div class="content">
+        <h1>Welcome To</h1>
+        <h3>Official website of OSIS SMA PGRI Temanggung</h3>
+    </div>
+
+    
+
+
+
+
+</body>
+</html>
