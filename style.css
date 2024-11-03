@@ -95,7 +95,7 @@ body {
 .sidebar {
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -500px;
     height: 100vh;
     width: 250px;
     z-index: 999;
@@ -106,7 +106,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    transition: 1s;
+    transition: .8s;
 }
 
 .sidebar li {
@@ -151,8 +151,7 @@ body {
     position: absolute;
     top: 50%;
     left: 100px;
-    transform: translateY(-50%);
-    text-align: left, center;
+    text-align: start;
     text-decoration: none;
 }
 
@@ -208,5 +207,11 @@ body {
 @media (max-width: 400px) {
     .sidebar {
         width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .content {
+        left: 5%;
     }
 }
