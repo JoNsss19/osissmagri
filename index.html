@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>OSIS SMA PGRI</title>
-    <link rel="shortcut icon" href="logo.png">
+    <link rel="shortcut icon" href="/images/osis.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="style.css">
-    <link rel="Stylesheet" href="sweetalert2.min.css">
+    <link rel="Stylesheet" href="/src/style.css">
+    <link rel="Stylesheet" href="/src/sweetalert2.min.css">
 </head>
 <body>
     <section class="header">
         <header class="navbar">
-            <a href="./"><img src="logo.png" class="logo"></a>
+            <a href="./"><img src="/images/osis.png" class="logo"></a>
 
             <nav class="nav-link">
                 <ul>
@@ -31,7 +31,10 @@
             </ul>
             </header>
 
-            
+            <div class="content">
+                <h1>Welcome To</h1>
+                <h3>Official website of OSIS SMA PGRI Temanggung</h3>
+            </div>
         
     </section>
 
@@ -50,10 +53,10 @@
         }
         function hideSidebar(){
             const sidebar = document.querySelector('.sidebar')
-            sidebar.style.right = '-300px'
+            sidebar.style.right = '-500px'
         }
     </script>
-    <script src="sweetalert2.all.min.js"></script>
+    <script src="/src/sweetalert2.all.min.js"></script>
 
     <script>
 
@@ -63,10 +66,10 @@
             width: 600,
             padding: "3em",
             color: "#716add",
-            background: "#fff url(trees.png)",
+            background: "#fff url(/images/trees.png)",
             backdrop: `
                 rgba(0,0,123,0.4)
-                url("nyan-cat.gif")
+                url("/images/nyan-cat.gif")
                 left top
                 no-repeat
             `
@@ -78,10 +81,10 @@
             width: 600,
             padding: "3em",
             color: "#716add",
-            background: "#fff url(trees.png)",
+            background: "#fff url(/images/trees.png)",
             backdrop: `
                 rgba(0,0,123,0.4)
-                url("nyan-cat.gif")
+                url("/images/nyan-cat.gif")
                 left top
                 no-repeat
             `
@@ -89,17 +92,6 @@
             hideSidebar();
         }
     </script>
-
-    
-    <div class="content">
-        <h1>Welcome To</h1>
-        <h3>Official website of OSIS SMA PGRI Temanggung</h3>
-    </div>
-
-    
-
-
-
 
 </body>
 </html>
